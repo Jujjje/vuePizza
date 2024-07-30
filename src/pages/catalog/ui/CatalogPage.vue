@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { storeToRefs } from "pinia";
-import { usePizzaStore } from "src/entities/pizza";
 import { CatalogWidget } from "src/widgets/catalog";
 import { FilterSelectorWidget } from "src/widgets/filterSelector";
 import CategoriesWidget from "src/widgets/typeSelector/ui/CategoriesWidget.vue";

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
 import { useCartStore } from "src/entities/cartItem";
-import { ICartItem } from "src/entities/cartItem/model/store";
 import { IPizza } from "src/entities/pizza/model/store";
 import { ref } from "vue";
 
