@@ -19,9 +19,9 @@ export const usePizzaStore = defineStore("usePizzaStore", () => {
   let category = ref<number>(0);
   let sort = ref<"id" | "title" | "price" | "">("");
   async function fetchData(): Promise<void> {
-    const url = `http://localhost:3000/pizzas?${
+    const url = `https://800dcec09d55a4b9.mokky.dev/pizzas?${
       category.value ? "category=" + category.value : ""
-    }&${sort.value ? "_sort=" + sort.value : ""}`;
+    }&${sort.value ? "sortBy=" + sort.value : ""}`;
     await axios
       .get(url)
       .then((response) => {
